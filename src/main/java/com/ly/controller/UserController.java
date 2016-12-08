@@ -11,6 +11,11 @@ import org.springframework.web.servlet.ModelAndView;
 import com.ly.domain.User;
 import com.ly.service.UserServiceI;
 
+/**
+ * 类注释
+ * @author 刘阳阳
+ *
+ */
 @Controller
 public class UserController {
 	
