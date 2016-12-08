@@ -9,6 +9,7 @@ import com.ly.dao.UserMapper;
 import com.ly.domain.User;
 import com.ly.service.UserServiceI;
 
+//取消("userService") servlet不能用   springMVC能用
 @Service("userService")
 public class UserServiceImpl implements UserServiceI {
 
