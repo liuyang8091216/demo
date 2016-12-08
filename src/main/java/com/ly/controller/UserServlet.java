@@ -17,6 +17,11 @@ import com.ly.domain.User;
 import com.ly.service.UserServiceI;
 import com.ly.service.impl.UserServiceImpl;
 
+/**
+ * 添加第二个类注释
+ * @author 刘阳阳
+ *
+ */
 public class UserServlet extends HttpServlet{
 
 	private UserServiceI userService;
