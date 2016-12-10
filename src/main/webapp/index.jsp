@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-欢迎访问！！
+欢迎访问！！<br>
 
-<a href="firstServlet">serlvet查看所有人员</a>
-<a href="firstMVC">mvc查看所有人员</a>
+<a href="firstServlet">serlvet查看所有人员</a><br>
+<a href="user_/firstMVC">mvc查看所有人员</a><br>
+<a href="order_/findfindOrdersUserResultMap">通过案例学习mybatis 查询所有订单以及订单信息</a><br>
 </body>
 </html>

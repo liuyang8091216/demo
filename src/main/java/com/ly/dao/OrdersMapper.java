@@ -1,5 +1,7 @@
 package com.ly.dao;
 
+import java.util.List;
+
 import com.ly.domain.Orders;
 
 public interface OrdersMapper {
@@ -14,4 +16,6 @@ public interface OrdersMapper {
     int updateByPrimaryKeySelective(Orders record);
 
     int updateByPrimaryKey(Orders record);
+    
+    public List<Orders> findOrdersUserResultMap() throws Exception;
 }

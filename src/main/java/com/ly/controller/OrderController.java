@@ -19,20 +19,20 @@ import com.ly.service.UserServiceI;
  * @author 刘阳阳
  *
  */
-@RequestMapping("user_")
+@RequestMapping("order_")
 @Controller
-public class UserController {
+public class OrderController {
 	
 	@Autowired
-	private UserServiceI userService;
-	
-	@RequestMapping(value="firstMVC",method=RequestMethod.GET)
-	public ModelAndView helloWorld(){
-		System.out.println("------->>>>springMVC");
-		String viewname = "success";
-		List<User> list = userService.getAllUser();
+	private OrderServiceI orderService;
+
+	@RequestMapping(value="findfindOrdersUserResultMap",method=RequestMethod.GET)
+	public ModelAndView findfindOrdersUserResultMap() throws Exception{
+		String viewname = "orderUser";
+		List<Orders> orders = orderService.findOrdersUserResultMap();
 		ModelAndView modelAndView = new ModelAndView(viewname);
-		modelAndView.addObject("user",list);
+		modelAndView.addObject("orders", orders);
 		return modelAndView;
+		
 	}
 }
