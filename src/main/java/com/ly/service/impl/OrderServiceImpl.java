@@ -20,5 +20,9 @@ public class OrderServiceImpl implements OrderServiceI {
 	public List<Orders> findOrdersUserResultMap() throws Exception {
 		return orderMapper.findOrdersUserResultMap();
 	}
+
+	public List<Orders> findOrdersAndOrderDetailResultMap() throws Exception {
+		return orderMapper.findOrdersAndOrderDetailResultMap();
+	}
  
 }

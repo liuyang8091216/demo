@@ -1,63 +1,65 @@
 package com.ly.domain;
 
 import java.util.Date;
+import java.util.List;
 
 public class Orders {
-    private Integer id;
+	private Integer id;
 
-    private Integer userId;
+	private Integer userId;
 
-    private String number;
+	private String number;
 
-    private Date createtime;
+	private Date createtime;
 
-    private String note;
-    
-    public Integer getId() {
-        return id;
-    }
+	private String note;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	public Integer getId() {
+		return id;
+	}
 
-    public Integer getUserId() {
-        return userId;
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+	public Integer getUserId() {
+		return userId;
+	}
 
-    public String getNumber() {
-        return number;
-    }
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
 
-    public void setNumber(String number) {
-        this.number = number == null ? null : number.trim();
-    }
+	public String getNumber() {
+		return number;
+	}
 
-    public Date getCreatetime() {
-        return createtime;
-    }
+	public void setNumber(String number) {
+		this.number = number == null ? null : number.trim();
+	}
 
-    public void setCreatetime(Date createtime) {
-        this.createtime = createtime;
-    }
+	public Date getCreatetime() {
+		return createtime;
+	}
 
-    public String getNote() {
-        return note;
-    }
+	public void setCreatetime(Date createtime) {
+		this.createtime = createtime;
+	}
 
-    public void setNote(String note) {
-        this.note = note == null ? null : note.trim();
-    }
+	public String getNote() {
+		return note;
+	}
 
-    /**
-     * 以上为原生态数据库逆向生成，
-     * 为了查询订单时把用户信息也封装进去，所以把user加上 
-     */
-    private Userr userr;
+	public void setNote(String note) {
+		this.note = note == null ? null : note.trim();
+	}
+
+	/**
+	 * 以上为原生态数据库逆向生成， 为了查询订单时把用户信息也封装进去，所以把user加上
+	 */
+	private Userr userr;
+	
+	List<Orderdetail> orderdetails;
 
 	public Userr getUserr() {
 		return userr;
@@ -66,14 +68,15 @@ public class Orders {
 	public void setUserr(Userr userr) {
 		this.userr = userr;
 	}
-    
-    
-    /*public void setUserr(Userr userr) {
-		this.userr = userr;
+
+	public List<Orderdetail> getOrderdetails() {
+		return orderdetails;
 	}
-    
-    public Userr getUserr() {
-		return userr;
-	}*/
-    
+
+	public void setOrderdetails(List<Orderdetail> orderdetails) {
+		this.orderdetails = orderdetails;
+	}
+
+	
+
 }

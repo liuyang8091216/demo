@@ -7,6 +7,8 @@ import com.ly.domain.Userr;
 
 public interface OrderServiceI {
 
-	List<Orders> findOrdersUserResultMap() throws Exception;
+	public List<Orders> findOrdersUserResultMap() throws Exception;
+	
+	public List<Orders> findOrdersAndOrderDetailResultMap() throws Exception;
 	
 }

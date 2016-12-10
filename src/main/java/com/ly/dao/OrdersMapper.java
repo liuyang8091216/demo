@@ -18,4 +18,6 @@ public interface OrdersMapper {
     int updateByPrimaryKey(Orders record);
     
     public List<Orders> findOrdersUserResultMap() throws Exception;
+    
+    public List<Orders> findOrdersAndOrderDetailResultMap() throws Exception;
 }

@@ -27,4 +27,9 @@ public class OrderTest {
 	public void testFindAll() throws Exception{
 		System.out.println(orderService.findOrdersUserResultMap());
 	}
+	
+	@Test
+	public void testfindOrdersAndOrderDetailResultMap() throws Exception{
+		System.out.println(orderService.findOrdersAndOrderDetailResultMap());
+	}
 }
