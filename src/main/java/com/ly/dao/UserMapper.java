@@ -4,11 +4,6 @@ import java.util.List;
 
 import com.ly.domain.User;
 
-/**
- * 这是dao层
- * @author 刘阳阳
- *
- */
 public interface UserMapper {
     int deleteByPrimaryKey(String userId);
 
@@ -21,6 +16,6 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
-    
-    List<User> getAllUser();
+
+	List<User> getAllUser();
 }
