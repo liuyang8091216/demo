@@ -33,6 +33,14 @@ public class OrderController {
 		ModelAndView modelAndView = new ModelAndView(viewname);
 		modelAndView.addObject("orders", orders);
 		return modelAndView;
-		
 	}
+
+	@RequestMapping(value="abc",method=RequestMethod.GET)
+	public String hello() throws Exception{
+		System.out.println("hello world!ua乱码吗");
+		String viewname = "orderUser";
+		return viewname;
+	}
+
+
 }
