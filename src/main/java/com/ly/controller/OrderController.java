@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.ly.domain.Orders;
@@ -36,11 +38,12 @@ public class OrderController {
 		return modelAndView;
 	}
 
+	@ResponseBody
 	@RequestMapping(value="abc",method=RequestMethod.GET)
 	public String hello() throws Exception{
-		System.out.println("hello world!ua乱码吗");
-		String viewname = "orderUser";
-		return viewname;
+		String str = "hello world!ua乱码吗";
+		System.out.println(str);
+		return str;
 	}
 
 
